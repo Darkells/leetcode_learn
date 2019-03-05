@@ -14,6 +14,6 @@
 
     首先第一想法就是放入新的数组里，要求使用空间复杂度为O(1)的原地算法：
 
-    ![1551803526516](C:\Users\83491\Documents\01.png)
+    ![1551803526516](https://github.com/Darkells/leetcode_learn/blob/master/src/Primary_code/01.png)
 
     设置一个盒子常量，放置替换的元素。需要执行次数为数组的长度，值得注意的是数组尾部的元素交换到数组头部 甚至想用单链表来解决
