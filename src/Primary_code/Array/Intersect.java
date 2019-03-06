@@ -1,4 +1,4 @@
-package Primary_code;
+package Primary_code.Array;
 
 import java.util.ArrayList;
 import java.util.Arrays;
