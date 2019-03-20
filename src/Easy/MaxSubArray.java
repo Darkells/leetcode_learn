@@ -42,8 +42,26 @@ public class MaxSubArray {
 
     /**
      * 分而治之法
+     * 递归搬运学习
+     *
+     * ---------------------
+     *                 作者：fengpojian
+     *         来源：CSDN
+     *         原文：https://blog.csdn.net/fengpojian/article/details/82788752
      * @param args
      */
+    public static int maxSubArray02(int[] nums){
+        if(nums == null || nums.length == 0){
+            return 0;
+        }
+        int local = nums[0];
+        int global = nums[0];
+        for(int i=1; i<nums.length; i++){
+            local = Math.max(nums[i], local+nums[i]);
+            global = Math.max(local, global);
+        }
+        return global;
+    }
 
     public static void main(String[] args){
         int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
