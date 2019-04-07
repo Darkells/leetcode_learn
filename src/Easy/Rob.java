@@ -26,6 +26,7 @@ public class Rob {
             return 0;
         }
         int[] memo = new int[n];
+        //最底下的
         memo[n - 1] = nums[n - 1];
         for (int i = n - 2; i >= 0; i--) {
             //处理memo[i]抢和不抢
