@@ -18,7 +18,4 @@ package Easy;
  * 所以，4 是第一个错误的版本。
  */
 public class FirstBadVersion {
-    public int firstBadVersion(int n) {
-
-    }
 }
