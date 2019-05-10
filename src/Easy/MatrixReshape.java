@@ -1,6 +1,11 @@
 package Easy;
 
 /**
+ * @author Dark
+ * @date 2019/5/5 10:24
+ */
+
+/**
  * 在MATLAB中，有一个非常有用的函数 reshape，它可以将一个矩阵重塑为另一个大小不同的新矩阵，但保留其原始数据。
  *
  * 给出一个由二维数组表示的矩阵，以及两个正整数r和c，分别表示想要的重构的矩阵的行数和列数。
@@ -38,4 +43,24 @@ package Easy;
  * 给定的 r 和 c 都是正数。
  */
 public class MatrixReshape {
+    public int[][] matrixReshape(int[][] nums, int r, int c) {
+        int h = nums.length;
+        int d = nums[0].length;
+        if (h * d < r * c){
+            return nums;
+        }
+        int[][] res = new int[r][c];
+        int index1 = 0;
+        int index2 = 0;
+        for(int i=0;i<h;i++){
+            for(int j=0;j<d;j++){
+                if(index2>=c){
+                    index1++;
+                    index2=0;
+                }
+                res[index1][index2++] = nums[i][j];
+            }
+        }
+        return res;
+    }
 }
