@@ -35,6 +35,6 @@ public class IsHappy {
     }
 
     public static void main(String[] args) {
-        System.out.println(21 / 10 + " " + 21 % 10);
+        System.out.println((int)Math.sqrt(4));
     }
 }
