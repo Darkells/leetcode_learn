@@ -4,9 +4,10 @@ import java.util.List;
 
 public class test {
     public static void main(String[] args){
-        List<Integer> list = FindAnagrams.findAngrams("cbaebabacd","abc");
-        for (int i : list){
+        int[] arr = new int[10];
+        for (int i : arr){
             System.out.println(i);
         }
+
     }
 }
