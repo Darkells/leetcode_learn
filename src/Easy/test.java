@@ -7,8 +7,7 @@ import Easy.LargeGroupPositions.*;
 
 public class test {
     public static void main(String[] args){
-        LargeGroupPositions largeGroupPositions = new LargeGroupPositions();
-        String s = "abcdddeeeeaabbbcd";
-        largeGroupPositions.largeGroupPositions2(s);
+        int[][] grid = {{2},{2,3}};
+        System.out.println(grid.length);
     }
 }
