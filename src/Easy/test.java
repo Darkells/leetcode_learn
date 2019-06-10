@@ -5,9 +5,31 @@ import java.util.HashMap;
 import java.util.List;
 import Easy.LargeGroupPositions.*;
 
-public class test {
+public class test{
+
     public static void main(String[] args){
-        int[][] grid = {{2},{2,3}};
-        System.out.println(grid.length);
+        final int i = 1;
+        System.out.println();
+    }
+
+    public static int gcd(int a, int b) {
+        if (b == 0) {
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }
+}
+
+
+class Parent {
+    Parent() {
+        System.out.println("调用父类的Parent()构造方法");
+    }
+}
+
+class SubParent extends Parent {
+    SubParent() {
+        System.out.println("调用子类的构造方法");
     }
 }
