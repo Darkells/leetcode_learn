@@ -9,7 +9,7 @@ public class test{
 
     public static void main(String[] args){
         final int i = 1;
-        System.out.println();
+        System.out.println((3^0) + (2^0));
     }
 
     public static int gcd(int a, int b) {
