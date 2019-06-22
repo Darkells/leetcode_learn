@@ -8,8 +8,12 @@ import Easy.LargeGroupPositions.*;
 public class test{
 
     public static void main(String[] args){
-        final int i = 1;
-        System.out.println((3^0) + (2^0));
+        int[] A = {1,2,0,0};
+        int temp = 0;
+        for (int i = 0; i < A.length; i++) {
+            temp += A[i] * Math.pow(10,A.length - 1 - i);
+        }
+        System.out.println(temp);
     }
 
     public static int gcd(int a, int b) {
