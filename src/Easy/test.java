@@ -8,12 +8,12 @@ import Easy.LargeGroupPositions.*;
 public class test{
 
     public static void main(String[] args){
-        int[] A = {1,2,0,0};
-        int temp = 0;
-        for (int i = 0; i < A.length; i++) {
-            temp += A[i] * Math.pow(10,A.length - 1 - i);
-        }
-        System.out.println(temp);
+        Integer a = 100;
+        Integer b = 100;
+        System.out.println(a.hashCode(b));
+        Integer c = 128;
+        Integer d = 128;
+        System.out.println(c.hashCode(d));
     }
 
     public static int gcd(int a, int b) {
@@ -27,6 +27,7 @@ public class test{
 
 
 class Parent {
+
     Parent() {
         System.out.println("调用父类的Parent()构造方法");
     }
