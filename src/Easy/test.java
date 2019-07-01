@@ -8,12 +8,10 @@ import Easy.LargeGroupPositions.*;
 public class test{
 
     public static void main(String[] args){
-        Integer a = 100;
-        Integer b = 100;
-        System.out.println(a.hashCode(b));
-        Integer c = 128;
-        Integer d = 128;
-        System.out.println(c.hashCode(d));
+        String a = "123";
+        String b = "123";
+        System.out.println(a == b);
+        System.out.println(a.equals(b));
     }
 
     public static int gcd(int a, int b) {
