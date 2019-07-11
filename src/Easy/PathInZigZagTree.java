@@ -10,7 +10,7 @@ import java.util.List;
 public class PathInZigZagTree {
     private List<Integer> list = new ArrayList<>();
     public List<Integer> pathInZigZagTree(int label) {
-
+        return null;
 
     }
 
