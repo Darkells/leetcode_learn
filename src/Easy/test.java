@@ -1,16 +1,20 @@
 package Easy;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import Easy.LargeGroupPositions.*;
-
 public class test{
 
     public static void main(String[] args){
-        System.out.println(100 % 60);
-
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(0);
+        root.right = new TreeNode(1);
+        root.left.left = new TreeNode(0);
+        root.left.right = new TreeNode(1);
+        root.right.left = new TreeNode(0);
+        root.right.right = new TreeNode(1);
+        SumRootToLeaf sumRootToLeaf = new SumRootToLeaf();
+        System.out.println(sumRootToLeaf.sumRootToLeaf(root));
     }
+
+
 
 
     public static int gcd(int a, int b) {
