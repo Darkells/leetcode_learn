@@ -1,17 +1,13 @@
 package Easy;
 
+import java.util.Arrays;
+
 public class test{
 
     public static void main(String[] args){
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(0);
-        root.right = new TreeNode(1);
-        root.left.left = new TreeNode(0);
-        root.left.right = new TreeNode(1);
-        root.right.left = new TreeNode(0);
-        root.right.right = new TreeNode(1);
-        SumRootToLeaf sumRootToLeaf = new SumRootToLeaf();
-        System.out.println(sumRootToLeaf.sumRootToLeaf(root));
+        DuplicateZeros duplicateZeros = new DuplicateZeros();
+        int[] arr = {1,0,2,3,0,4,5,0};
+        System.out.println(Arrays.toString(duplicateZeros.duplicateZeros(arr)));
     }
 
 
