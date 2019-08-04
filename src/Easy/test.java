@@ -5,9 +5,7 @@ import java.util.Arrays;
 public class test{
 
     public static void main(String[] args){
-        DuplicateZeros duplicateZeros = new DuplicateZeros();
-        int[] arr = {1,0,2,3,0,4,5,0};
-        System.out.println(Arrays.toString(duplicateZeros.duplicateZeros(arr)));
+        System.out.println(10 ^ 3);
     }
 
 
