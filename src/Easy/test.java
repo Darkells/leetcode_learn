@@ -5,7 +5,10 @@ import java.util.Arrays;
 public class test{
 
     public static void main(String[] args){
-        System.out.println(10 ^ 3);
+        StringBuilder sb = new StringBuilder();
+        sb.append("1");
+        sb.append("2");
+        System.out.println(sb.toString());
     }
 
 
