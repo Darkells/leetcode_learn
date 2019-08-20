@@ -1,14 +1,15 @@
 package Easy;
 
+import Medium.RestoreIpAddresses;
+
 import java.util.Arrays;
 
 public class test{
 
     public static void main(String[] args){
-        StringBuilder sb = new StringBuilder();
-        sb.append("1");
-        sb.append("2");
-        System.out.println(sb.toString());
+        for (String s : RestoreIpAddresses.restoreIpAddresses("25525511135")){
+            System.out.println(s);
+        }
     }
 
     public static int gcd(int a, int b) {
