@@ -1,5 +1,6 @@
 package Easy;
 
+import Medium.GameOfLife;
 import Medium.RestoreIpAddresses;
 
 import java.util.Arrays;
@@ -7,9 +8,8 @@ import java.util.Arrays;
 public class test{
 
     public static void main(String[] args){
-        for (String s : RestoreIpAddresses.restoreIpAddresses("25525511135")){
-            System.out.println(s);
-        }
+        int [][] board = {{0,1,0},{0,0,1},{1,1,1},{0,0,0}};
+        GameOfLife.gameOfLife(board);
     }
 
     public static int gcd(int a, int b) {
