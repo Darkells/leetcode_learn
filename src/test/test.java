@@ -1,10 +1,10 @@
 package test;
 
+import Medium.ReverseWords;
 import Medium.SolveNQueens;
 
 public class test {
     public static void main(String[] args) {
-        SolveNQueens solveNQueens = new SolveNQueens();
-        solveNQueens.solveNQueens(4);
+        System.out.println(ReverseWords.reverseWords("a"));
     }
 }
