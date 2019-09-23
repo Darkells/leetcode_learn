@@ -1,10 +1,14 @@
 package test;
 
-import Medium.SolveNQueens;
+import Medium.ListNode;
+import Medium.ReorderList;
 
 public class test {
     public static void main(String[] args) {
-        SolveNQueens solveNQueens = new SolveNQueens();
-        solveNQueens.solveNQueens(4);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        ReorderList.reorderList(head);
     }
 }
