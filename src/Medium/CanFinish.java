@@ -38,6 +38,6 @@ public class CanFinish {
             return false;
         }
 
-
+        return true;
     }
 }
