@@ -5,7 +5,7 @@ package Medium;
  * @2019/7/29 14:16
  */
 public class ListNode {
-    int val;
+    public int val;
     public ListNode next;
     public ListNode(int x) {
         val = x;
