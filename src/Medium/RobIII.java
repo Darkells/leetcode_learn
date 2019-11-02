@@ -56,6 +56,7 @@ public class RobIII {
         root.left = Solution(root.left);
         root.right = Solution(root.right);
         root.val = Math.max(root.left.val + root.right.val, root.val + root.left.left.val + root.left.right.val + root.right.left.val + root.right.right.val);
+
         return root;
     }
 }
