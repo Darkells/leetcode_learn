@@ -2,7 +2,17 @@ package test;
 
 public class test {
     public static void main(String[] args) {
-        int i = 11;
-        System.out.println(i & 2);
+        System.out.println(2 & 1);
+    }
+
+    public static int NumberOf1(int n) {
+        int count = 0;
+        while(n > 0) {
+            if ((n & 1) == 1) {
+                count++;
+            }
+            n = n >>> 1;
+        }
+        return count;
     }
 }

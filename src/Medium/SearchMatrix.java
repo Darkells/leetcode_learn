@@ -1,5 +1,7 @@
 package Medium;
 
+import java.awt.image.ImageProducer;
+
 /**
  * 编写一个高效的算法来判断 m x n 矩阵中，是否存在一个目标值。该矩阵具有如下特性：
  *
@@ -52,5 +54,21 @@ public class SearchMatrix {
         }
 
         return (left < matrix.length * matrix[0].length && matrix[left / matrix[0].length][left % matrix[0].length] == target);
+    }
+
+    public boolean searchMatirx2(int[][] matrix, int target) {
+        if (matrix == null || matrix.length == 0) return false;
+        int row = 0;
+        int col = matrix[0].length - 1;
+        while (row < matrix.length && col >= 0) {
+            if (matrix[row][col] == target) {
+                return true;
+            } else if (matrix[row][col] > target) {
+                col--;
+            } else {
+                row++;
+            }
+        }
+        return false;
     }
 }
