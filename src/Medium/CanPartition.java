@@ -60,4 +60,29 @@ public class CanPartition {
         }
         return dp[size - 1][target];
     }
+
+    public static boolean canPartition2(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return false;
+        }
+
+        int sum = 0;
+        for (int num : nums) {
+            sum += num;
+        }
+
+        if ((sum & 1) == 1) {
+            return false;
+        }
+
+        sum /= 2;
+        boolean[] dp = new boolean[sum + 1];
+        dp[0] = true;
+        for (int num : nums) {
+            for (int i = sum; i >= num; i--) {
+                dp[i] = dp[i] || dp[i - num];
+            }
+        }
+        return dp[sum];
+    }
 }
