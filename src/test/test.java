@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class test {
     public static void main(String[] args) {
-        System.out.println(2 & 1);
+        PrintToMaxOfDigits printToMaxOfDigits = new PrintToMaxOfDigits();
+        printToMaxOfDigits.printToMaxOfDigits(3);
     }
 
     public static int NumberOf1(int n) {
