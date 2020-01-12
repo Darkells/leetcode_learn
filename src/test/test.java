@@ -1,10 +1,18 @@
 package test;
 
-import java.util.Arrays;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Random;
+
 
 public class test {
     public static void main(String[] args) {
-        System.out.println(1 ^ 2);
+
+        Random random = new Random();
+        Integer number = random.nextInt(9) + 1;
+
+        System.out.println(System.currentTimeMillis() + String.valueOf(number));
+        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:ss")));
     }
 
     public static int NumberOf1(int n) {
