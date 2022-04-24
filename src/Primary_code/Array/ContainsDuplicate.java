@@ -16,11 +16,12 @@ import java.util.Set;
 public class ContainsDuplicate {
     //利用set的属性可以直接解决
     public static boolean containsDuplicate(int[] nums) {
-        Set set = new HashSet();
+        Set<Integer> set = new HashSet<>();
         for(int a : nums){
             //Set.add(Object)添加失败会返回false
-            if(!set.add(a))
+            if(!set.add(a)) {
                 return true;
+            }
         }
         return false;
     }
