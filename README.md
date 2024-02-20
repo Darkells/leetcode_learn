@@ -8,3 +8,6 @@ leetcode学习记录
 
 ## 其他说明
 纯属算法小白，算法学习中。如有搬运的算法望见谅，定会注明相关信息
+
+## 2024-02-20
+Restart the project and actively look for job opportunities
